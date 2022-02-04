@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : Aashish Katwal
 */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -17,7 +17,7 @@ and open the template in the editor.
     outline: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 a, button{
@@ -57,7 +57,7 @@ nav.right-nav li:first-child{
 }
 
 nav.right-nav li:last-child button{
-    padding: .3rem .7rem;
+    padding: .5rem .7rem;
     font-size: 1rem;
     background-color: #02aa2F;
     border-radius: 4px;
@@ -69,6 +69,7 @@ nav.left-nav li:last-child{
     font-size: 1.2rem;
     font-weight: 700;
     color: #fff;
+    user-select: none;
 }
 
 .main{
@@ -129,24 +130,27 @@ form{
 
 input[type="submit"]{
     background-color: #02aa2F;
-    padding: 0.2rem 1.1rem; 
-    font-size: 1.1rem;
+    padding: 0.4rem 1.1rem; 
+    font-size: 1.2rem;
     border-radius: 3px;
     color: #fff;
     cursor: pointer;
 }
 
-.showcase{
+.showcase-img{
     max-height: 25rem;
 }
 
-/*Result Images*/ 
+.showcase{
+    transition: .2s;
+}
 
+/*Result Images*/ 
 .result-section{
     background-color: #f2f2f2;
 }
 
-.result-title{
+.section-title{
     text-align: center;
     padding: 1.5rem;
 }
@@ -193,6 +197,60 @@ input[type="submit"]{
     color: #000;
 }
 
+
+/*how it works*/
+
+.howitworks{
+    background-color: #f2f2f2;
+}
+
+.detail-process{
+    margin: auto;
+    padding: 30px 60px;
+}
+
+.block {
+    width: calc(40%);
+    background-color: #fff;
+    border: 1px solid white;
+    margin: 25px 0;
+    padding: 1.5rem 1rem;
+    position: relative;
+}
+
+.block::before {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 165%;
+    background-color: #ddd;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.block::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #02aa2F;
+    left: -27px;
+    top: 45%;
+}
+
+.block p {
+    font-size: 15px;
+    color: #444;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Footer*/
 .f-wrapper{
     padding: 1.5rem 2rem;
@@ -219,16 +277,17 @@ input[type="submit"]{
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 500;
+    user-select: none;
 }
 
 .v-bar{
     font-size: 2rem;
-    margin-right: 10px;
+    margin-right: 5px;
     color: rgba(0, 0, 0, .4);
 }
 
 .myname{
-    font-size: .8rem;
+    font-size: .9rem;
     color: rgba(0, 0, 0, .4);
 }
 
@@ -241,4 +300,15 @@ input[type="submit"]{
 
 .social-icons:not(:first-child){
     margin-left: 10px;
+}
+
+@media screen and (max-width: 988px){
+    .main-wrapper{
+        flex-direction: column;
+    }
+
+    .showcase{
+        margin-top: 50px;
+    }
+
 }
