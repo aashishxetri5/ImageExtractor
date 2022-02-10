@@ -29,7 +29,8 @@ public class WebScrapper {
 
             for (Element elem : doc.select("img[src]")) {
                 String srcUrl = elem.attr("src");
-                if (!srcUrl.isBlank()) {
+//                if (srcUrl.isBlack()) {
+                if (srcUrl.length() > 0) {
                     if (validateSrcUrl(srcUrl)) {
                         if (srcUrl.contains("?")) {
                             validSourceUrls.add(srcUrl.substring(0, srcUrl.indexOf('?')));
