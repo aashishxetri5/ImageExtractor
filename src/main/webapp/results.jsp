@@ -23,7 +23,7 @@
             <i class="fas fa-external-link-alt"></i>
         </a>
 
-        <span class="imageName"><%=name.split("\\.")[0]%></span>
+        <span class="imageName" title="<%=name.split("\\.")[0]%>"><%=name.split("\\.")[0]%></span>
     </div>
 </div>
 

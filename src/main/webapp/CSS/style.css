@@ -197,6 +197,10 @@ input[type="submit"]{
     color: #000;
 }
 
+.imageName{
+    width: 50px;
+    overflow: hidden;
+}
 
 /*how it works*/
 
