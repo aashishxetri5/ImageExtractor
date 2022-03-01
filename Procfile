@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS cd target/classes:target/ dependency/* heroku.App

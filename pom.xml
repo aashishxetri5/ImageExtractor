@@ -34,10 +34,10 @@
             <plugin>
                 <groupId>com.heroku.sdk</groupId>
                 <artifactId>heroku-maven-plugin</artifactId>
-                <version>0.5.1</version>
                 <configuration>
                     <appName>images-extractor</appName>
                 </configuration>
+                <version>3.0.3</version>
             </plugin>
             
             <plugin>
