@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS cd target/classes:target/ dependency/* heroku.App
+web: java $JAVA_OPTS -cp target/classes:target/ dependency/* heroku.App
