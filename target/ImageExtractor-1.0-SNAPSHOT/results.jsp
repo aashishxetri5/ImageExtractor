@@ -7,10 +7,12 @@
 
     List<String> sources = new WebScrapper().getAllImgs(url);
 
-    for (String source : sources) {
+    if (sources.size() > 0) {
 
-        source = source.contains("https://") ? source : source != null ? url + "/" + source : "";
-        String name = source.split("/")[source.split("/").length - 1];
+        for (String source : sources) {
+
+            source = source.contains("https://") ? source : source != null ? url + "/" + source : "";
+            String name = source.split("/")[source.split("/").length - 1];
 %>
 
 
@@ -28,6 +30,16 @@
 </div>
 
 
-<% }
+<%
+    }
     sources.clear();
+} else {
+%>
+
+<div class="error">
+    <h3>Could Not establish connection with</h3> <a href="<%=url%>" target="_blank"> <%=url%> </a>
+</div>
+
+<%
+    }
 %>

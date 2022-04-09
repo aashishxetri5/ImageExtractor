@@ -7,6 +7,7 @@ package webscrapper;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -29,7 +30,7 @@ public class WebScrapper {
 
             for (Element elem : doc.select("img[src]")) {
                 String srcUrl = elem.attr("src");
-//                if (srcUrl.isBlack()) {
+//                if (srcUrl.isBlank()) {
                 if (srcUrl.length() > 0) {
                     if (validateSrcUrl(srcUrl)) {
                         if (srcUrl.contains("?")) {
@@ -49,12 +50,9 @@ public class WebScrapper {
 
     public boolean validateSrcUrl(String url) {
         boolean isValid = false;
+        String[] urlExtensions = {"jpg", "jpeg", "webp", "png", "gif", "sveg", "ico", "tiff", "bmp"};
         List<String> validUrlItems = new ArrayList<>();
-        validUrlItems.add("jpg");
-        validUrlItems.add("png");
-        validUrlItems.add("jpeg");
-        validUrlItems.add("svg");
-        validUrlItems.add("gif");
+        Collections.addAll(validUrlItems, urlExtensions); //adding the urlExtensions into the list.
 
         if (validUrlItems.contains(url.split("\\.")[url.split("\\.").length - 1]) || url.contains(".github")) {
             isValid = true;

@@ -55,7 +55,7 @@
                             <label for="url-field">Url of Website</label>
                             <input class="url-input" type="url" id="url-field" name="scrapeUrl" placeholder="Eg.: https://itsnp.org/" required/>
                         </div>
-                        <input type="submit" name="scrapeThisUrl" value="Fetch!"/>
+                        <input type="submit" name="scrapeThisUrl" value="Fetch!" title="Fetch"/>
                     </form>
                     <p style="font-size: .8rem; opacity: 0.4;line-height: 2rem;">Get all the images from the site.</p>
                 </div>
@@ -114,17 +114,17 @@
         <footer>
             <div class="f-wrapper">
                 <a class="footer-left">
-                    <img class="footer-img" src="https://bit.ly/3oo4xhX" alt="Image"/>
-                    <span class="footer-text"> Pic Extractor <span class="myname"> <span class="v-bar">|</span> Aashish Katwal</span> </span>
+                    <img class="footer-img" src="https://avatars.githubusercontent.com/u/43494041" alt="Image"/>
+                    <span class="footer-text"> Image Extractor <span class="myname"> <span class="v-bar">|</span> Aashish Katwal</span> </span>
                 </a>
                 <span>
-                    <a href="https://www.facebook.com/AashishXetri2002/" target="_blank" class="social-icons">
+                    <a href="https://www.facebook.com/AashishXetri2002/" target="_blank" class="social-icons" title="Facebook">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.instagram.com/aashish_xetri/" target="_blank" class="social-icons">
+                    <a href="https://www.instagram.com/aashish_xetri/" target="_blank" class="social-icons" title="Instagram">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/aashish-katwal-076076175/" target="_blank" class="social-icons">
+                    <a href="https://www.linkedin.com/in/aashish-katwal-076076175/" target="_blank" class="social-icons" title="Linked In">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </span>

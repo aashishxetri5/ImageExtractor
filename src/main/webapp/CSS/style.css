@@ -153,6 +153,7 @@ input[type="submit"]{
 .section-title{
     text-align: center;
     padding: 1.5rem;
+    color: #5f5f5f;
 }
 
 .show-result{
@@ -202,6 +203,20 @@ input[type="submit"]{
     overflow: hidden;
 }
 
+.error {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.error > a{
+    font-size: 14px;
+    color: blue;
+}
+
+.error > a:hover{
+    text-decoration: underline;
+}
+
 /*how it works*/
 
 .howitworks{
@@ -214,7 +229,7 @@ input[type="submit"]{
 }
 
 .block {
-    width: calc(40%);
+    width: calc(50%);
     background-color: #fff;
     border: 1px solid white;
     margin: 25px 0;
@@ -244,9 +259,13 @@ input[type="submit"]{
     top: 45%;
 }
 
-.block p {
+.block p, .error > h3 {
     font-size: 15px;
-    color: #444;
+    color: #555;
+}
+
+.block h4 {
+    color: #505050;
 }
 
 .timeline {
@@ -285,9 +304,8 @@ input[type="submit"]{
 }
 
 .v-bar{
-    font-size: 2rem;
-    margin-right: 5px;
-    color: rgba(0, 0, 0, .4);
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, .7);
 }
 
 .myname{
@@ -306,6 +324,11 @@ input[type="submit"]{
     margin-left: 10px;
 }
 
+.social-icons > i:hover{
+    color: rgba(0,0,0,.9);
+    transition: .4s;
+}
+
 @media screen and (max-width: 988px){
     .main-wrapper{
         flex-direction: column;
@@ -313,6 +336,11 @@ input[type="submit"]{
 
     .showcase{
         margin-top: 50px;
+    }
+    
+    .block {
+        transition: .3s;
+        width: calc(80%);
     }
 
 }
