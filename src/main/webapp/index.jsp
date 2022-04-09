@@ -8,8 +8,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="google-site-verification" content="ZB-Bb_WZOYS3u3CSRZQ-QNfLYszvbvCnD29vNrqVzfY" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Extract Image</title>
+        <link rel="shortcut icon" href="${pageContext.request.contextPath}/Imgs/Logo.png" type="image/x-icon" />
         <link rel="stylesheet" href="CSS/style.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css" integrity="sha512-ioRJH7yXnyX+7fXTQEKPULWkMn3CqMcapK0NNtCN8q//sW7ZeVFcbMJ9RvX99TwDg6P8rAH2IqUSt2TLab4Xmw==" crossorigin="anonymous"/>
 
